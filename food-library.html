@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Library | NutriLife</title>
+  <meta name="description" content="Browse nutrient-rich foods by category with benefits, serving sizes, and age-group recommendations.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥗</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="food-library">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="NutriLife Home">
+        <img src="images/logo-icon.svg" class="logo-icon" alt="NutriLife logo" aria-hidden="true">
+        Nutri<span>Life</span>
+      </a>
+      <div class="header-right">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="nav" aria-label="Primary navigation">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="age-groups.html" class="nav-link">Age Groups</a></li>
+            <li><a href="balanced-diet.html" class="nav-link">Balanced Diet</a></li>
+            <li><a href="food-library.html" class="nav-link active">Food Library</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+          <span class="theme-icon theme-icon-light" aria-hidden="true">☀️</span>
+          <span class="theme-icon theme-icon-dark" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag reveal">📚 Nutrient Guide</span>
+        <h1 class="page-hero-title reveal">Food Library</h1>
+        <p class="page-hero-desc reveal">Explore wholesome foods organized by category. Each entry includes key nutrients, health benefits, recommended serving sizes, and ideal age groups.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="library-toolbar reveal">
+          <div class="library-search-wrap">
+            <label for="food-search" class="visually-hidden">Search foods</label>
+            <input type="search" id="food-search" class="form-input library-search" placeholder="Search foods by name or nutrient…" autocomplete="off">
+          </div>
+          <div class="library-filters" id="library-filters" role="tablist" aria-label="Food category filters"></div>
+        </div>
+
+        <p class="library-count reveal" id="library-count" aria-live="polite"></p>
+        <div class="food-library-grid" id="food-library-grid"></div>
+        <p class="library-empty hidden" id="library-empty">No foods match your search. Try a different keyword or category.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🥗 Nutri<span>Life</span></div>
+          <p>A community health awareness initiative dedicated to nutrition education across all life stages. Developed as a B.Tech Community Service Project.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Nutrition</a></li>
+            <li><a href="age-groups.html">Age Groups</a></li>
+            <li><a href="balanced-diet.html">Balanced Diet</a></li>
+            <li><a href="food-library.html">Food Library</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>References</h4>
+          <ul>
+            <li><a href="https://www.who.int" target="_blank" rel="noopener noreferrer">WHO Guidelines</a></li>
+            <li><a href="https://www.nin.res.in" target="_blank" rel="noopener noreferrer">ICMR-NIN</a></li>
+            <li><a href="https://www.unicef.org/nutrition" target="_blank" rel="noopener noreferrer">UNICEF Nutrition</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>CSP Information</h4>
+          <ul class="footer-info">
+            <li>🏫 B.Tech CSE Department</li>
+            <li>🎯 Nutrition Awareness Campaign</li>
+            <li>📍 Community Outreach Initiative</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NutriLife — Nutrition Requirements Awareness for Different Age Groups.</p>
+        <p>Scientific References: WHO / UNICEF / ICMR-NIN</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

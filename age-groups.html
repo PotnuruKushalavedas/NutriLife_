@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Groups | NutriLife</title>
+  <meta name="description" content="Explore nutrition requirements for children, adolescents, adults, and older adults.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥗</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="age-groups">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="NutriLife Home">
+        <img src="images/logo-icon.svg" class="logo-icon" alt="NutriLife logo" aria-hidden="true">
+        Nutri<span>Life</span>
+      </a>
+      <div class="header-right">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="nav" aria-label="Primary navigation">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="age-groups.html" class="nav-link active">Age Groups</a></li>
+            <li><a href="balanced-diet.html" class="nav-link">Balanced Diet</a></li>
+            <li><a href="food-library.html" class="nav-link">Food Library</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+          <span class="theme-icon theme-icon-light" aria-hidden="true">☀️</span>
+          <span class="theme-icon theme-icon-dark" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+
+    <section class="section age-explorer-section">
+      <div class="container">
+        <div class="age-explorer-intro reveal">
+          <h1 class="age-explorer-title">Age Group Explorer</h1>
+          <span class="age-explorer-accent" aria-hidden="true"></span>
+          <p class="age-explorer-desc">Select an age cohort to understand their biological milestones, nutritional guidelines, recommended foods, and clinical deficiency warnings.</p>
+        </div>
+
+        <div class="age-explorer-cards reveal" role="tablist" aria-label="Age group selector">
+          <button class="age-explorer-card active" role="tab" aria-selected="true" data-age="children">
+            <span class="age-explorer-icon age-icon-yellow">👶</span>
+            <span class="age-explorer-name">Children</span>
+            <span class="age-explorer-range">6–12 Years</span>
+          </button>
+          <button class="age-explorer-card" role="tab" aria-selected="false" data-age="adolescents">
+            <span class="age-explorer-icon age-icon-pink">👩‍🎓</span>
+            <span class="age-explorer-name">Adolescents</span>
+            <span class="age-explorer-range">13–19 Years</span>
+          </button>
+          <button class="age-explorer-card" role="tab" aria-selected="false" data-age="adults">
+            <span class="age-explorer-icon age-icon-green">👨‍💼</span>
+            <span class="age-explorer-name">Adults</span>
+            <span class="age-explorer-range">20–59 Years</span>
+          </button>
+          <button class="age-explorer-card" role="tab" aria-selected="false" data-age="olderAdults">
+            <span class="age-explorer-icon age-icon-peach">👵</span>
+            <span class="age-explorer-name">Older Adults</span>
+            <span class="age-explorer-range">60+ Years</span>
+          </button>
+        </div>
+
+        <div class="age-panel glass-card reveal" id="age-panel" role="tabpanel"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🥗 Nutri<span>Life</span></div>
+          <p>A community health awareness initiative dedicated to nutrition education across all life stages. Developed as a B.Tech Community Service Project.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Nutrition</a></li>
+            <li><a href="age-groups.html">Age Groups</a></li>
+            <li><a href="balanced-diet.html">Balanced Diet</a></li>
+            <li><a href="food-library.html">Food Library</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>References</h4>
+          <ul>
+            <li><a href="https://www.who.int" target="_blank" rel="noopener noreferrer">WHO Guidelines</a></li>
+            <li><a href="https://www.nin.res.in" target="_blank" rel="noopener noreferrer">ICMR-NIN</a></li>
+            <li><a href="https://www.unicef.org/nutrition" target="_blank" rel="noopener noreferrer">UNICEF Nutrition</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>CSP Information</h4>
+          <ul class="footer-info">
+            <li>🏫 B.Tech CSE Department</li>
+            <li>🎯 Nutrition Awareness Campaign</li>
+            <li>📍 Community Outreach Initiative</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NutriLife — Nutrition Requirements Awareness for Different Age Groups.</p>
+        <p>Scientific References: WHO / UNICEF / ICMR-NIN</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
